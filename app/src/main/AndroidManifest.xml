@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kwy2868.practice">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".PApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.EEGActivity"/>
+        <activity android:name=".activity.CheckEmotionActivity"/>
+        <activity android:name=".activity.PreferMusicListActivity"/>
+        <activity android:name=".activity.CheckEmotionForPreferActivity"/>
+
+
+        <activity android:name=".activity.MusicListActivity"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="79cd3830faa1ba264481e6e2f775c07d" />
+
+    </application>
+
+</manifest>

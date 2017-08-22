@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_1"
+    android:padding="8dp">
+
+    <TextView android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+    <TextView android:id="@+id/attention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+    <TextView android:id="@+id/meditation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"/>
+
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="320dp" />
+
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:text="Connect"
+        android:onClick="doStuff"
+        android:textColor="@android:color/white"
+        android:background="@color/main_2"/>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/main_1">
+
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="BACK"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="@color/text"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/high_att_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_4"
+            android:text="HIGH ATT."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/low_att_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="LOW ATT."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:textColor="@color/main_4"/>
+
+        <TextView
+            android:id="@+id/high_med_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_4"
+            android:text="HIGH MED."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/low_med_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="LOW MED."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:textColor="@color/main_4"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emotion_good_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="100dp"
+            android:text="HAPPY"
+            android:background="@color/main_2"/>
+
+        <TextView
+            android:id="@+id/emotion_normal_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="90dp"
+            android:text="RELAXED"
+            android:background="@color/main_3"/>
+
+        <TextView
+            android:id="@+id/emotion_bad_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="100dp"
+            android:text="STRESS"
+            android:background="@color/main_4"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
